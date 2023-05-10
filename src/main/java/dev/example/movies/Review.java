@@ -14,6 +14,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Review {
     @Id
     private ObjectId id;
+
+    public Review(String reviewBody) {
+        this.reviewBody = reviewBody;
+    }
+
     private String reviewBody;
 
 }
